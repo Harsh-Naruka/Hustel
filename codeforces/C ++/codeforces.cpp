@@ -1,45 +1,22 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
-    int t;
-    cin >> t;
-    
-    while (t--) {
-        int n, m;
-        long long h;
-        cin >> n >> m >> h;
-        
-        vector<long long> a(n), original(n);
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-            original[i] = a[i];
+int main() { 
+    int n,m;
+    cin>>n>>m;
+    if(n==2&&m==3)cout<<"YES";
+    if(n==3){
+        if(m%2!=0&&m%3!=0){
+            cout<<"YES";
         }
-        
-        for (int i = 0; i < m; i++) {
-            int b;
-            long long c;
-            cin >> b >> c;
-            b--; // convert to 0-indexed
-            
-            a[b] += c;
-            
-            // Check only the modified element
-            if (a[b] > h) {
-                a = original;
-            }
-        }
-        
-        // Output the final array
-        for (int i = 0; i < n; i++) {
-            cout << a[i];
-            if (i < n - 1) cout << " ";
-        }
-        cout << "\n";
     }
-    
+    if(n%2!=0&&n%3!=0){
+        if(m%2!=0&&m%3!=0){
+            if(n+2==m&&(m%2!=0&&m%3!=0))cout<<"YES";
+            else if(n+4==m&&(m%2!=0&&m%3!=0))cout<<"YES";
+            else cout<<"NO";
+        }
+        else cout<<"NO";
+    }
     return 0;
 }

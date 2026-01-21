@@ -1,33 +1,52 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int main() {
     int t;
-    cin>>t;
-    while(t--){
+    cin >> t;
+
+    while (t--) {
         int n;
-        cin>>n;
-        long long int a[n];
-        for(int i=0;i<n;i++){
-           cin>>a[i];
+        cin >> n;
+
+        long long a[n];
+
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
         }
-        bool c=false;
-        int count=0;
-        for(int i=0;i<n-1;i++){
-           if(a[i]<=a[i+1])c=true;
-           else c=false;
-           int b=n-2;
-           if(a[b]<=a[b+1])
-            a[b]=a[b]+1;
-            a[b+1]=a[b+1]-1;
-            count+=1;
-           }
+
+        // Check if already not sorted
+        bool sorted = true;
+
+        for (int i = 0; i < n - 1; i++) {
+            if (a[i] > a[i + 1]) {
+                sorted = false;
+                break;
+            }
         }
-        if(c==false)cout<<0<<'\n';
-        else{
-           cout<<count<<'\n';
-        } 
+
+        // If already not sorted
+        if (!sorted) {
+            cout << 0 << endl;
+            continue;
         }
-        return 0;
-    }   
-    
+
+        // Find minimum adjacent difference
+        long long minDiff = LLONG_MAX;
+
+        for (int i = 0; i < n - 1; i++) {
+            long long diff = a[i + 1] - a[i];
+            if (diff < minDiff) {
+                minDiff = diff;
+            }
+        }
+
+        // Minimum operations
+        long long answer = (minDiff / 2) + 1;
+
+        cout << answer << endl;
+    }
+
+    return 0;
+}

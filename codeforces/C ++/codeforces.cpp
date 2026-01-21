@@ -1,29 +1,33 @@
 #include <iostream>
 using namespace std;
 
-bool isPrime(int x) {
-    if (x < 2) return false;
-    for (int i = 2; i * i <= x; i++) {
-        if (x % i == 0)
-            return false;
-    }
-    return true;
-}
-
 int main() {
-    int n, m;
-    cin >> n >> m;
-
-    // find next prime after n
-    for (int i = n + 1; ; i++) {
-        if (isPrime(i)) {
-            if (i == m)
-                cout << "YES";
-            else
-                cout << "NO";
-            break;
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        long long int a[n];
+        for(int i=0;i<n;i++){
+           cin>>a[i];
         }
-    }
-
-    return 0;
-}
+        bool c=false;
+        int count=0;
+        for(int i=0;i<n-2;i++){
+           if(a[i]<a[i+1])c=true;
+           else c=false;
+           int b=n-2;
+           if(a[b]<=a[b+1]){
+            a[b]=a[b]+1;
+            a[b+1]=a[b+1]-1;
+            count+=1;
+           }
+        }
+        if(c=false)cout<<0<<'\n';
+        else{
+           cout<<count<<'\n';
+        } 
+        }
+        return 0;
+    }   
+    

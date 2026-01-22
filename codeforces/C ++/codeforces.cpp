@@ -13,8 +13,9 @@ int main() {
                 p++;
             }
         }
-        if(p>=2)cout<<"YES";
-        else cout<<"NO";
+        if(p>=2)cout<<"YES"<<'\n';
+        else cout<<"NO"<<'\n';
     }
+    
     return 0;
 }

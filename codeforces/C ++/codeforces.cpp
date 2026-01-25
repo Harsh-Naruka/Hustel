@@ -16,8 +16,6 @@ int main() {
         int j = 0;
 
         for (char c : s) {
-            if (c == target[j])
-                j++;
 
     return 0;
 }

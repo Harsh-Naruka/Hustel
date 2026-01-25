@@ -13,9 +13,7 @@ int main() {
         cin >> s;
 
         string target = "()()";
-        int j = 0;
 
-        for (char c : s) {
 
     return 0;
 }

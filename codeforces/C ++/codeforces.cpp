@@ -18,15 +18,6 @@ int main() {
         for (char c : s) {
             if (c == target[j])
                 j++;
-            if (j == 4)
-                break;
-        }
-
-        if (j == 4)
-            cout << "YES\n";
-        else
-            cout << "NO\n";
-    }
 
     return 0;
 }

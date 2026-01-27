@@ -1,14 +1,17 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
     int t;
     cin>>t;
     while(t--){
-        int a,b,c;
-        cin>>a>>b>>c;
-        if(a+b==c)cout<<"+"<<'\n';
-        else cout<<"-"<<'\n';
+        int n;
+        long long int x,y;
+        string s;
+        cin>>s;
+        for(int i=0;i<n;i++){
+            
+        }
     }
     return 0;
 }

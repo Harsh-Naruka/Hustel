@@ -16,7 +16,10 @@ int main() {
             if(c=='8')c8++;
             else c4++;
         }
-        
+        long long dx=abs(x);
+        long long dy=abs(y);
+        if(dx+dy <= d4 + 2*c8 && max(dx,dy)<=d4+d8)cout<<"YES\n";
+        else cout<<"NO\n";
     }
     return 0;
 }

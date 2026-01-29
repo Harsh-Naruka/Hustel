@@ -2,15 +2,13 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-
     int t;
     cin >> t;
-
     while (t--) {
-        int n,k,x;
-        cin>>n>>k>>x;
+        int x,k;
+        cin>>x>>k;
+        if(x!=k)cout<<"1\n"<<x<<'\n';
+        else cout<<"1\n"<<x-1<<'\n';
     }
 
     return 0;

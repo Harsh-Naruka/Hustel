@@ -17,7 +17,11 @@ int main() {
         if(b==c)cout<<"0\n";
         else if(n%2==0 && c>b){
             if(c%2!=0){
-                
+                int q=(c-1)-b;
+                cout<<q<<"\n";
+            }
+            else {
+                if()
             }
         }
     }

@@ -16,7 +16,9 @@ int main() {
         }
         if(b==c)cout<<"0\n";
         else if(n%2==0 && c>b){
-            
+            if(c%2!=0){
+                
+            }
         }
     }
 

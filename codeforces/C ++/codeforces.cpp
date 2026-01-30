@@ -5,10 +5,19 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int x,k;
-        cin>>x>>k;
-        if(x!=k)cout<<"1\n"<<x<<'\n';
-        else cout<<"1\n"<<x-1<<'\n';
+        int n;
+        cin>>n;
+        int a[n];
+        int c=0,b=0;
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+            if(a[i]==1)b++;
+            else c++;
+        }
+        if(b==c)cout<<"0\n";
+        else if(n%2==0 && c>b){
+            
+        }
     }
 
     return 0;

@@ -1,21 +1,25 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 int main() {
-    int n, k, t;
-    cin >> n >> k >> t;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
+    int t;
+    cin>>t;
+    while(t--){
+        long long int a,b,c,d;
+        cin>>a>>b>>c>>d;
+        int c;
+        if(a==c&&b==d)cout<<"0\n";
+        if(b>d)cout<<"-1\n";
+        else if(b<d){
+            a++;
+            c++
+            b++;
+        }
+        else if(b==d&&a<c){
+            a--;
+            c++;
+        }
+        cout<<"c"<<"\n";
     }
-
-    int moves = t / k;
-    int pos = moves % n;
-
-    if (pos == 0)
-        cout << a[n - 1];
-    else
-        cout << a[pos - 1];
-
     return 0;
 }

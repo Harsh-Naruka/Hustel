@@ -25,8 +25,7 @@ int main(){
                     count+=2;
                 }
             }
-        }
-        
+        }  
         cout<<count<<'\n';
     }
     return 0;

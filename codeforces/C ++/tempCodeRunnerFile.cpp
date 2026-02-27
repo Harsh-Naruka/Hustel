@@ -1,23 +1,5 @@
-#include<iostream>
-using namespace std;
-int main(){
-    int t;
-    cin>>t;
-    
-    while(t--){
-        int n;
-        cin>>n;
-        string s;
-        cin>>s;
-        int count=0;
-        for(int i=0;i<n;i++){
-            if(s[i]=='.')count++;
-            if(i+2<n&&s[i+2]=='.'&&s[i]=='.'&&s[i+1]=='.'){
-                count=2;
-                break;
-            }
-        }
-        cout<<count<<'\n';
-    }
-    return 0;
+if(s.find("0000000")!=string::npos || s.find("1111111")!=string::npos)
+        cout<<"YES";
+    else
+        cout<<"NO";
 }

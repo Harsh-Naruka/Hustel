@@ -1,35 +1,21 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    int count1=0 , count2=0;
-    int coin[n];
+    int n; cin>>n;
+    int a[n] ; int coin=0, sum=0 , crt=0;
+
     for(int i=0;i<n;i++){
-        cin>>coin[i];
-        if(n%2==0){
-            if(i<(n/2)+1){
-                count1+=coin[i];
-            }
-            else{
-                count2+=coin[i];
-            }
-        }
-        else{
-            if(i<(n+1)/2){
-                count1+=coin[i];
-            }
-            else{
-                count2+=coin[i];
-            }
-        }
+        cin>>a[i];
+        sum+=a[i];
     }
-    if(n%2==0){
-        if(count1>count2)cout<<(n/2)+1;
-        else cout<<n/2;
+    sum/=2;
+    sort(a,a+n,greater<int>());
+    
+    for(int i=0;i<n;i++){
+        crt+=a[i];
+        coin++;
+        if(crt>sum)break;
     }
-    else{
-        if(count1>count2)cout<<(n+1)/2;
-        else cout<<(n-1)/2;
-    }
+    cout<<coin;
 }

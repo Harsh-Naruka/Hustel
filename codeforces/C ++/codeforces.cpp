@@ -25,6 +25,11 @@ int main(){
         }
     }
     if(n%2==0){
-        if(count1>count2)cout<<
+        if(count1>count2)cout<<(n/2)+1;
+        else cout<<n/2;
+    }
+    else{
+        if(count1>count2)cout<<(n+1)/2;
+        else cout<<(n-1)/2;
     }
 }

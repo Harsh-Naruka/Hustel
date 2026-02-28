@@ -16,7 +16,15 @@ int main(){
             }
         }
         else{
-            
+            if(i<(n+1)/2){
+                count1+=coin[i];
+            }
+            else{
+                count2+=coin[i];
+            }
         }
+    }
+    if(n%2==0){
+        if(count1>count2)cout<<
     }
 }

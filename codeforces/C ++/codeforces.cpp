@@ -1,10 +1,22 @@
 #include<iostream>
 using namespace std;
 int main(){
-    string s;
-    cin>>s;
-    if(s.find("0000000")!=string::npos || s.find("1111111")!=string::npos)
-        cout<<"YES";
-    else
-        cout<<"NO";
+    int n;
+    cin>>n;
+    int count=0;
+    int coin[n];
+    for(int i=0;i<n;i++){
+        cin>>coin[i];
+    }
+    if(n==2)cout<<'2';
+    else{
+        for(int i=0;i<n;i++){
+            if(n%2==0 && i<=n/2){
+                count+=coin[i];
+            }
+            else{
+                
+            }
+        }
+    }
 }

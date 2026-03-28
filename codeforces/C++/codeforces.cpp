@@ -1,15 +1,14 @@
 #include<iostream>
 using namespace std;
-typedef long long ll;
 int main(){
-	int t;cin>>t;
-	while(t--){
-	ll a; cin>>a;
-	while(a%2==0) a=a/2;
-	cout<<(a>1?"Yes":"No");
-<<<<<<< HEAD:codeforces/C++/codeforces.cpp
+	int n,m; cin>>n>>m;
+	int c=0;
+	while(n--){
+		int a;cin>>a;
+		if(m>0){
+			m--;
+			if(a<0){c=c+(a*(-1));}
+		}
 	}
+	cout<<c;
 }
-=======
-}
->>>>>>> 4a18942 (Added some file):codeforces/C ++/codeforces.cpp

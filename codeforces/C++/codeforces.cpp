@@ -7,5 +7,9 @@ int main(){
 	ll a; cin>>a;
 	while(a%2==0) a=a/2;
 	cout<<(a>1?"Yes":"No");
+<<<<<<< HEAD:codeforces/C++/codeforces.cpp
 	}
 }
+=======
+}
+>>>>>>> 4a18942 (Added some file):codeforces/C ++/codeforces.cpp

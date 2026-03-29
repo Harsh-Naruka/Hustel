@@ -1,14 +1,14 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
 	int n,m; cin>>n>>m;
+	int arr[n];
 	int c=0;
-	while(n--){
-		int a;cin>>a;
-		if(m>0){
-			m--;
-			if(a<0){c=c+(a*(-1));}
-		}
+	for(int i=0;i<n;i++){cin>>arr[i];}
+	sort(arr,arr+n);
+	for(int i=0;i<n;i++){
+		if(arr[i]>=0)break;
+		c=c+arr[i]
 	}
-	cout<<c;
+	cout<<abs(c);
 }

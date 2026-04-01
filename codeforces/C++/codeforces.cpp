@@ -4,14 +4,18 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int n;
-        cin >> n;
-        int y = n % 2020;          // count of 2021s
-        int x = (n - y) / 2020 - y; // count of 2020s
-        if (x >= 0 && 2020 * x + 2021 * y == n)
-            cout << "YES\n";
-        else
-            cout << "NO\n";
+        long long n; cin>>n;
+        int c=0;
+        if(n<3 && n!=2 )cout<<"0\n";
+        else if(n%5==0) cout<<"-1\n";
+        else{
+                if(n%6==0) {
+                    n/=6;
+                    c++;
+                }
+                else{
+
+                }
+            }
+        }
     }
-    return 0;
-}

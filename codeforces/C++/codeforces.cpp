@@ -5,19 +5,19 @@ int main() {
     cin >> t;
     while (t--) {
         long long n; cin>>n;
-        int c=0;
-        if(n<3 && n!=2 )cout<<"0\n";
-        else if(n%5==0) cout<<"-1\n";
+        int a=0;
+        int b=0;
+        while(n%2==0){
+            a++;
+            n=n/2;
+        }
+        while(n%3==0){
+            b++;
+            n=n/3;
+        }
+        if(n!=1 || b<a)cout<<"-1\n";
         else{
-                if(n%6==0) {
-                    n/=6;
-                    c++;
-                }
-                else{
-                    n*=2;
-                    c++;
-                }
-            }
-            cout<<c<<endl;
+            cout<<(b+(b-a))<<endl;
+        }
         }
     }

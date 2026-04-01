@@ -14,8 +14,10 @@ int main() {
                     c++;
                 }
                 else{
-
+                    n*=2;
+                    c++;
                 }
             }
+            cout<<c<<endl;
         }
     }

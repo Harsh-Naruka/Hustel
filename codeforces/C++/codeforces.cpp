@@ -4,7 +4,7 @@ int main() {
     int n,m; cin>>n>>m;
     int day=0;
     for(int i=0;i<n;i++){
-        if(n%m==0)n++;
+        if(i%m==0)n++;
         day++;
     }
 

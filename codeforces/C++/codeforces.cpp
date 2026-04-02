@@ -7,4 +7,6 @@ int main() {
         if(i%m==0)n++;
         day++;
     }
+    cout<<day;
+}    
 

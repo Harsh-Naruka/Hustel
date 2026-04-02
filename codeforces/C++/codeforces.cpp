@@ -3,5 +3,5 @@ using namespace std;
 int main() {
     int n,m; cin>>n>>m;
     int day=0;
-    
+    for()
 

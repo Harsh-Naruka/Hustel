@@ -9,4 +9,3 @@ int main() {
     }
     cout<<day;
 }    
-

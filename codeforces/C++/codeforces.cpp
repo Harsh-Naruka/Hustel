@@ -8,4 +8,5 @@ int main() {
         if(c=='R') cout<<s[s.find(i)-1];
         else cout<<s[s.find(i)+1];
     }
-}    
+} 
+   

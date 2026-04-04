@@ -13,3 +13,4 @@ int main() {
         cout<<-sum+(2*mx)<<'\n';
     }
 } 
+

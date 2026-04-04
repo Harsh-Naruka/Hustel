@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 int main() {
-    char c,i; cin>>c;
-    string s="qwertyuiopasdfghjkl;zxcvbnm,./";
-    while(cin>>i){
-        cout<<s[s.find(i)-(c=='R')+(c=='L')];
+    int t; cin>>t;
+    while(t--){
+        int a; cin>>a;
+        cout<<a+1;
     }
 } 

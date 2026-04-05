@@ -4,11 +4,12 @@ using namespace std;
 int main(){
     int n; cin>>n;
     string s;
-    int 1s=0 , 0s=0;
+    int c=0 , d=0;
     for(int i=0;i<n;i++){
         cin>>s[i];
-        if(s[i]==0)0s++;
-        else 1s++;
+        if(s[i]==0)c++;
+        else d++;
     }
-    cout<<1s-0s;
+    if(c>d)cout<<c-d;
+    else cout<<d-c;
 }

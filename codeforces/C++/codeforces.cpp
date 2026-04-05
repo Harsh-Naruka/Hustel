@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(){
-    int t; cin>>t;
-    while(t--){
-        int n,a,b; cin>>n>>a>>b;
-        string s;
-        for(int i=0;i<b;i++) s+='a'+i;
-        for(int i=0;i<a-b;i++) s+=s[i];
-        for(int i=0;i<n-a;i++) s+=s[i];
-        cout<<s<<'\n';
+    int n; cin>>n;
+    string s;
+    int 1s=0 , 0s=0;
+    for(int i=0;i<n;i++){
+        cin>>s[i];
+        if(s[i]==0)0s++;
+        else 1s++;
     }
+    cout<<1s-0s;
 }

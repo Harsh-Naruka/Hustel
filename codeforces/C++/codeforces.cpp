@@ -1,31 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<long long> primes;
-void sieve(int lim){
-    vector<bool> is_prime(lim+1, true);
-    is_prime[0]=is_prime[1]=false;
-    for(int i=2;i*i<=lim;i++)
-        if(is_prime[i])
-            for(int j=i*i;j<=lim;j+=i)
-                is_prime[j]=false;
-    for(int i=2;i<=lim;i++)
-        if(is_prime[i]) primes.push_back(i);
-}
-
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    sieve(200000); // more than enough primes for n=10^4
-    int t;
-    cin>>t;
+    int t; cin>>t;
     while(t--){
-        int n;
-        cin>>n;
-        for(int i=0;i<n;i++){
-            cout << primes[i]*primes[i+1];
-            if(i<n-1) cout<<" ";
-        }
-        cout<<"\n";
+        int n,a,b; cin>>n>>a>>b;
+        string s;
+        for(int i=0;i<b;i++) s+='a'+i;
+        for(int i=0;i<a-b;i++) s+=s[i];
+        for(int i=0;i<n-a;i++) s+=s[i];
+        cout<<s<<'\n';
     }
 }

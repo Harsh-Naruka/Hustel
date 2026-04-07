@@ -9,9 +9,10 @@ int main(){
     int count=0,sum=0;
     sort(a,a+11);
     for(int i=10;i>=0;i--){
+        if(sum>=k)break;
             sum+=a[i];
             count++;
-        if(sum>=k)break;
+        
     }
     cout<<count;
 }

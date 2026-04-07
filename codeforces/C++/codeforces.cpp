@@ -8,11 +8,10 @@ int main(){
     }
     int count=0,sum=0;
     sort(a,a+12);
-    for(int i=11;i>=0;i--){
-        if(sum>=k)break;
-            sum+=a[i];
-            count++;
-        
+    for(int i=11;i>-1;i--){
+        if(sum>=k)return 0;
+        else {sum+=a[i];
+            count++;} 
     }
-    cout<<count;
+    cout<<count; return 0;
 }

@@ -9,9 +9,14 @@ int main(){
     int count=0,sum=0;
     sort(a,a+12);
     for(int i=11;i>-1;i--){
-        if(sum>=k)return 0;
-        else {sum+=a[i];
-            count++;} 
+        if(sum>=k){
+            cout<<count;
+            return 0;}
+        else {
+            sum+=a[i];
+            count++;
+        } 
     }
-    cout<<count; return 0;
+    if(k<=0)cout<<-1;
+    else cout<<count;
 }

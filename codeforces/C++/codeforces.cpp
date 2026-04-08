@@ -14,7 +14,7 @@ int main(){
             count++;
         } 
     }
-    if(k<=0)cout<<-1;
+    if(k<=0)cout<<"-1";
     else cout<<count;
     return 0;
 }

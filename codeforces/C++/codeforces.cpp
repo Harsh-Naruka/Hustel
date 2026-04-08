@@ -1,20 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int k; cin>>k;
-    int a[12],mx=0;
-    for(int i=0;i<12;i++){
-        cin>>a[i];
+    int a,mx=0; cin>>a;
+    string s,ss,twogram; cin>>s;
+    map<string ,int> smp;
+
+    for(int i=0;i<a-1;i++){
+        ss=s[i]; ss+=s[i+1]; smp[ss]++;
+        if(smp[ss]>mc) mc=smp[ss] ,  togram=ss;
     }
-    int count=0,sum=0;
-    sort(a,a+12);
-    for(int i=11;i>-1;i--){
-        if(sum<k){
-            sum+=a[i];
-            count++;
-        } 
-    }
-    if(k<=0)cout<<"-1";
-    else cout<<count;
-    return 0;
+    cout<<twogram;
 }

@@ -11,7 +11,7 @@ int main(){
             x=(x/2)+10;
             }x=x-(m*10);
         }
-        if (x<=0)cout<<"YES\n";
+        if (x<=m+n)cout<<"YES\n";
         else cout<<"NO\n";
 	}
 }

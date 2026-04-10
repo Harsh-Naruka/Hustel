@@ -1,14 +1,18 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a,mc=0; cin>>a;
-    string s,ss,twogram; cin>>s;
-    map<string ,int> smp;
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int A=b-(c-b);
+        int B=a-(c-a)/2;
+        int C=b+(b-a);
 
-    for(int i=0;i<a-1;i++){
-        ss=s[i], ss+=s[i+1]; 
-        smp[ss]++;//AB:1//
-        if(smp[ss]>mc) mc=smp[ss] , twogram=ss;
+        if(A!=0 && A>=a && A%a==0) cout<<"YES\n";
+        else if(B && B>=b && B%b==0 && (c-a)%2==0) cout<<"YES\n";
+        else if(C && C>=c && C%c==0) cout<<"YES\n";
+        else cout<<"NO\n";
     }
-    cout<<twogram;
 }

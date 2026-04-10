@@ -1,17 +1,16 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
  
 int main(){
-	int t; cin>>t;
-	while(t--){
+    int t; cin>>t;
+    while(t--){
         int x,n,m; cin>>x>>n>>m;
-        if(x<=m+n) x=x-(m*10);
-        else{
-        for(int i=0;i<n;i++){
-            x=(x/2)+10;
-            }x=x-(m*10);
+        while(n--){
+            int temp = (x/2)+10;
+            if(x<=temp) break;
+            x = temp;
         }
-        if (x<=0)cout<<"YES\n";
-        else cout<<"NO\n";
-	}
+        if(x<=m*10) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
 }

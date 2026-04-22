@@ -7,7 +7,7 @@ int main(){
 		string s;
 		
 		for(int i=9;i>0;i--){
-			if(n>=i) s=to_string(i)+s; n-=i;
+			if(n>=i) s=to_string(i)+s, n-=i;
 		}
 		cout<<(n==0?s:"-1")<<endl;
 	}

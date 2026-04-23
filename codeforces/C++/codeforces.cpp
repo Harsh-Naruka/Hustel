@@ -4,11 +4,9 @@ int main(){
 	int t; cin>>t;
 	while(t--){
 		int n; cin>>n;
-		string s;
-		
-		for(int i=9;i>0;i--){
-			if(n>=i) s=to_string(i)+s, n-=i;
+		int a[n];
+		for(int i=0;i<n;i++){
+			cin>>a[i];
 		}
-		cout<<(n==0?s:"-1")<<endl;
 	}
 }

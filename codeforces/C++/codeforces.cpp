@@ -2,6 +2,7 @@
 using namespace std;
  
 int main(){
+<<<<<<< HEAD
 	int t; cin>>t;
 	while(t--){	
 		int n, ans=0; cin>>n;
@@ -19,5 +20,11 @@ int main(){
 		}
 		
 		cout<<ans<<endl;
+=======
+	int t; cin>>t; 
+	while(t--){
+		int n; cin>>n;
+		cout<<n+(n-1)/9<<endl;
+>>>>>>> 47c86fc (html)
 	}
 }

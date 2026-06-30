@@ -131,3 +131,25 @@ header {
     background: #2d1e6b;
     background: linear-gradient(45deg, #2c2c94 38% , #f805d0 97%);
 }
+
+.band{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 100px;
+    color: #ffffff;
+    justify-content: space-around;
+    transform: rotate(-3deg);
+    border: 1px solid #ffffff40;
+    background:#ffffff40;
+    box-shadow: 0 80px 32px 0 Orgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+}
+
+.band img{
+    height: 25px;
+    width: 25px;
+    mix-blend-mode: multiply;
+}

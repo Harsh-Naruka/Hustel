@@ -23,6 +23,7 @@ header {
 #logo-container{
     display: flex;
     align-content: center;
+    mix-blend-mode: multiply;
 }
 
 #logo-container > h2{

@@ -251,7 +251,7 @@ header {
 }
 
 .card {
-    width: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -262,10 +262,42 @@ header {
     background: #35276D;
     box-shadow: 0 8px 32px 0 rgba(31 , 38, 135,0.37);
     backdrop-filter: blur();
-    margin: 3px;
+    margin: 8px;
     margin-top: 30px;
+    color: #ffffff;
 }
 
+.card > img {
+    width: 100%;
+}
+
+.boton2 {
+    background: #2d1e6b;
+    background: linear-gradient(45deg, #2c2c94 38% , #f805d0 97%);
+    width: 90%;
+    padding: 10px 1px ;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 10px;
+    transform: skew(-20deg);
+    cursor: pointer;
+    border: 1px solid #7d63f1;
+    background-color: transparent;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #ffffff;
+    padding: 100px 10% 0 10%;
+    position: relative;
+}
+
+.logo-with-name {
+    height: 100px;
+    width: 100px;
+}
 
 
 

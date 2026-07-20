@@ -7,6 +7,12 @@ public:
             freq[ch - 'a']++;
         }
 
-        for (
+        for (char ch : ransomNote) {
+            if (freq[ch - 'a'] == 0) {
+                return false;
+            }
+            freq[ch - 'a']--;
+        }
+        return true
     }
 };
